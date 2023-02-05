@@ -1,0 +1,12 @@
+version: "v0.0.1"
+services:
+  database:
+    image: shop_db
+    container_name: shop_db
+    ports:
+      - "3306:3306"
+  backend:
+    image: shop_backend
+    container_name: shop_backend
+    ports:
+      - "8080:8080"
