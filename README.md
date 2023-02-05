@@ -1,2 +1,4 @@
 # shopping_list
-Ima Ready
+
+# Deployment
+`docker compose up` to run  

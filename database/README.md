@@ -1,7 +1,11 @@
-# Shopping List Database
+# Shopping List Database Service
+
+The Shopping List Database Service hosts the mysql db that will hold the list of items.
+
+It will also hold various other persistent data required by future features and iterations
+
 
 ## Deployment
-* Docker build
 ```bash
  docker build -t shop_db .
  docker image list
