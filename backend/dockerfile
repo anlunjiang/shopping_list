@@ -1,6 +1,6 @@
 FROM python:3.10-slim-bullseye
 
-COPY ./src/ /app/
+COPY ./src/ /app/src/
 COPY ./requirements.txt /app/
 
 WORKDIR "/app"
@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 ENV PYTHONPATH "${PYTHONPATH}:/app/"
 EXPOSE 8080
 
-CMD ["python", "/app/flaskr/main.py"]
+CMD ["python", "/app/src/flaskr/main.py"]

@@ -6,3 +6,4 @@ docker build -t shop_db ./database/
 docker build -t shop_backend ./backend
 # docker container run -p 127.0.0.2:5000:5000 -d --name shop_backend shop_backend
 
+docker compose up
