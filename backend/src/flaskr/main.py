@@ -2,7 +2,7 @@ from flask import Flask
 import os
 
 from src.flaskr.connections.mysql.mysql_connector import MySQLDatabase
-from src.flaskr.dao import connect
+from src.flaskr.read_table import connect
 
 app = Flask(__name__)
 os.environ["FLASK_DEBUG"] = "1"

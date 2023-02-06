@@ -7,6 +7,8 @@ from src.flaskr.utils.log_config.logging_conf import logger
 def connect(db: Database = None) -> pd.DataFrame:
     logger.info("Reading from mysql")
     with db.session_scope() as session:
-        df = pd.read_sql_query(text("select * from SHOP.test"), session.connection())
+        df = pd.read_sql_query(
+            text("select * from SHOP.SHOPPING_LIST"), session.connection()
+        )
 
     return df
